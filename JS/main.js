@@ -17,4 +17,20 @@ var Multipal = {currentValue:1,
 	}
 }
 
-	
+// album 
+// Photo is the parant witch has album and its taking picturs in as array 
+function Photo(place , name){
+	this.place = place
+	this.name	= name
+}
+function Album(){
+	this.photos = [];
+}
+
+
+var photo = new Photo("../images/photo1", "dog.jpg")
+var album = new Album()
+
+album.photos.push(photo)
+
+//
